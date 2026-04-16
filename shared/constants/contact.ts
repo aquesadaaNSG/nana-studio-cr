@@ -1,13 +1,13 @@
 export const BRAND = {
-  NAME: "La Madeja CR",
-  TAGLINE: "Tejidos hechos con amor, hechos para durar",
+  NAME: "Nana Studio",
+  TAGLINE: "Un universo en cada puntada",
   DESCRIPTION:
     "Somos un emprendimiento costarricense especializado en productos tejidos a crochet, hechos completamente a mano con materiales de la más alta calidad.",
-  WHATSAPP: "50688888888", // Actualizar con número real
-  PHONE: "+506 8888-8888",
-  EMAIL: "hola@lamadejacr.com",
-  INSTAGRAM: "https://www.instagram.com/lamadejacr",
-  FACEBOOK: "https://www.facebook.com/lamadejacrr",
+  WHATSAPP: "50684410997",
+  PHONE: "+506 8441-0997",
+  EMAIL: "nana.stud1o68@gmail.com",
+  INSTAGRAM: "https://www.instagram.com/nana.stud1o/",
+  TIKTOK: "https://www.tiktok.com/@nana.stud1o",
   ADDRESS: {
     CITY: "San José",
     COUNTRY: "Costa Rica",

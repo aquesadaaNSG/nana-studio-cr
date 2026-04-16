@@ -90,7 +90,7 @@ export const useCartStore = create<CartStore>()(
       },
     }),
     {
-      name: "lamadeja-cart",
+      name: "nana-studio-cart",
       partialize: (state) => ({ items: state.items }),
     }
   )
