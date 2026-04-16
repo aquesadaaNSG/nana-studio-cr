@@ -1,0 +1,60 @@
+{
+  "currency": "USD",
+  "provider": "Correos de Costa Rica",
+  "estimatedDays": {
+    "zone1": "1-2 días hábiles",
+    "zone2": "2-3 días hábiles",
+    "zone3": "3-5 días hábiles",
+    "zone4": "4-6 días hábiles"
+  },
+  "freeShippingThreshold": 75,
+  "zones": [
+    {
+      "id": "zone1",
+      "name": "San José Centro",
+      "price": 3.00,
+      "provinces": [],
+      "cantons": [
+        "San José", "Escazú", "Desamparados", "Aserrí", "Mora",
+        "Goicoechea", "Santa Ana", "Alajuelita", "Vázquez de Coronado",
+        "Acosta", "Tibás", "Moravia", "Montes de Oca", "Turrubares",
+        "Dota", "Curridabat", "Pérez Zeledón", "León Cortés Castro"
+      ]
+    },
+    {
+      "id": "zone2",
+      "name": "Gran Área Metropolitana",
+      "price": 5.50,
+      "provinces": ["Heredia", "Cartago"],
+      "cantons": [
+        "Alajuela", "San Ramón", "Grecia", "Atenas", "Naranjo",
+        "Palmares", "Poás", "Orotina", "San Carlos"
+      ]
+    },
+    {
+      "id": "zone3",
+      "name": "Resto Valle Central",
+      "price": 8.00,
+      "provinces": ["Alajuela"],
+      "cantons": [
+        "Upala", "Los Chiles", "Guatuso", "Río Cuarto"
+      ]
+    },
+    {
+      "id": "zone4",
+      "name": "Regiones Remotas",
+      "price": 12.00,
+      "provinces": ["Guanacaste", "Puntarenas", "Limón"],
+      "cantons": []
+    }
+  ],
+  "provinceZoneMap": {
+    "San José": "zone1",
+    "Heredia": "zone2",
+    "Cartago": "zone2",
+    "Alajuela": "zone2",
+    "Guanacaste": "zone4",
+    "Puntarenas": "zone4",
+    "Limón": "zone4"
+  }
+}
