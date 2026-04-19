@@ -9,7 +9,7 @@ export const BRAND = {
   INSTAGRAM: "https://www.instagram.com/nana.stud1o/",
   TIKTOK: "https://www.tiktok.com/@nana.stud1o",
   ADDRESS: {
-    CITY: "San José",
+    CITY: "Cartago",
     COUNTRY: "Costa Rica",
   },
 } as const;
