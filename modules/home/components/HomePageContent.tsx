@@ -164,7 +164,7 @@ export default function HomePageContent({ featured, categories }: HomePageConten
       {/* CTA BANNER */}
       <Box sx={{ py: { xs: 6, md: 8 }, background: "linear-gradient(135deg, #AED9E0 0%, #A8C5DA 100%)", textAlign: "center" }}>
         <Container maxWidth="md">
-          <Typography variant="h3" sx={{ color: "navy.main", fontWeight: 800, mb: 2, color: "#2C4A5A" }}>¿Listo para llevar un tejido a tu vida?</Typography>
+          <Typography variant="h3" sx={{ color: "#2C4A5A", fontWeight: 800, mb: 2 }}>¿Listo para llevar un tejido a tu vida?</Typography>
           <Typography variant="body1" sx={{ color: "rgba(44,74,90,0.75)", mb: 4, fontSize: "1.1rem" }}>
             Explora nuestra tienda o escríbenos para un pedido personalizado.
           </Typography>
