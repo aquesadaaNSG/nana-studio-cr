@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --color-rose: #E8829A;
-  --color-rose-light: #F4B8C5;
-  --color-rose-dark: #C85F78;
-  --color-lavender: #A78BCA;
-  --color-lavender-light: #C9B4E6;
-  --color-mint: #A8E6CF;
-  --color-mint-light: #C8F0E0;
-  --color-cream: #FFF8F4;
-  --color-cream-dark: #F5E8DF;
-  --color-brown: #3D2B1F;
-  --color-brown-light: #7A6255;
+  --color-sky: #AED9E0;
+  --color-sky-light: #CCE9F0;
+  --color-sky-dark: #82BEC8;
+  --color-periwinkle: #A8C5DA;
+  --color-periwinkle-light: #C5DCE9;
+  --color-aqua: #9DD4D8;
+  --color-aqua-light: #BDE6E9;
+  --color-cream: #F2F9FB;
+  --color-cream-dark: #E0EFF4;
+  --color-navy: #2C4A5A;
+  --color-navy-light: #5B7A8A;
   --color-peach: #FFD6A5;
 }
 
 @theme inline {
   --color-background: var(--color-cream);
-  --color-foreground: var(--color-brown);
+  --color-foreground: var(--color-navy);
 }
 
 * {
@@ -30,7 +30,7 @@ html {
 
 body {
   background-color: var(--color-cream);
-  color: var(--color-brown);
+  color: var(--color-navy);
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,11 +45,11 @@ body {
   background: var(--color-cream-dark);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-rose-light);
+  background: var(--color-sky-light);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-rose);
+  background: var(--color-sky);
 }
 
 /* Animaciones */

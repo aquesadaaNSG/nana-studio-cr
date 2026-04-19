@@ -5,11 +5,11 @@ import { createTheme } from "@mui/material/styles";
 declare module "@mui/material/styles" {
   interface Palette {
     cream: Palette["primary"];
-    mint: Palette["primary"];
+    aqua: Palette["primary"];
   }
   interface PaletteOptions {
     cream?: PaletteOptions["primary"];
-    mint?: PaletteOptions["primary"];
+    aqua?: PaletteOptions["primary"];
   }
 }
 
@@ -17,40 +17,40 @@ export const crochetTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#E8829A",
-      light: "#F4B8C5",
-      dark: "#C85F78",
-      contrastText: "#FFFFFF",
+      main: "#AED9E0",
+      light: "#CCE9F0",
+      dark: "#82BEC8",
+      contrastText: "#2C4A5A",
     },
     secondary: {
-      main: "#A78BCA",
-      light: "#C9B4E6",
-      dark: "#7C5FA0",
-      contrastText: "#FFFFFF",
+      main: "#A8C5DA",
+      light: "#C5DCE9",
+      dark: "#7A9BB5",
+      contrastText: "#2C4A5A",
     },
     error: { main: "#E57373" },
     warning: { main: "#FFB74D" },
     success: { main: "#66BB6A" },
     background: {
-      default: "#FFF8F4",
+      default: "#F2F9FB",
       paper: "#FFFFFF",
     },
     text: {
-      primary: "#3D2B1F",
-      secondary: "#7A6255",
+      primary: "#2C4A5A",
+      secondary: "#5B7A8A",
     },
-    divider: "#F0DDD5",
+    divider: "#CBE3EA",
     cream: {
-      main: "#FFF8F4",
-      light: "#FFFAF7",
-      dark: "#F5E8DF",
-      contrastText: "#3D2B1F",
+      main: "#F2F9FB",
+      light: "#F8FCFD",
+      dark: "#E0EFF4",
+      contrastText: "#2C4A5A",
     },
-    mint: {
-      main: "#A8E6CF",
-      light: "#C8F0E0",
-      dark: "#7DCBAA",
-      contrastText: "#1A4731",
+    aqua: {
+      main: "#9DD4D8",
+      light: "#BDE6E9",
+      dark: "#6FBABE",
+      contrastText: "#1A3A40",
     },
   },
   typography: {
@@ -85,10 +85,10 @@ export const crochetTheme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          boxShadow: "0 2px 8px rgba(61, 43, 31, 0.06)",
+          boxShadow: "0 2px 8px rgba(44, 74, 90, 0.06)",
           borderRadius: "16px",
           transition: "box-shadow 0.2s ease, transform 0.2s ease",
-          "&:hover": { boxShadow: "0 8px 24px rgba(61, 43, 31, 0.12)" },
+          "&:hover": { boxShadow: "0 8px 24px rgba(44, 74, 90, 0.12)" },
         },
       },
     },
@@ -103,9 +103,9 @@ export const crochetTheme = createTheme({
         root: {
           "& .MuiOutlinedInput-root": {
             borderRadius: "12px",
-            "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: "#E8829A" },
+            "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: "#AED9E0" },
             "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-              borderColor: "#E8829A",
+              borderColor: "#82BEC8",
               borderWidth: "2px",
             },
           },
@@ -124,7 +124,7 @@ export const crochetTheme = createTheme({
     },
     MuiDivider: {
       styleOverrides: {
-        root: { borderColor: "#F0DDD5" },
+        root: { borderColor: "#CBE3EA" },
       },
     },
     MuiPaper: {
