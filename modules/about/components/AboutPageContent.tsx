@@ -11,7 +11,7 @@ export default function AboutPageContent() {
       {/* Hero */}
       <Box
         sx={{
-          background: "linear-gradient(135deg, #FFF0F5 0%, #F5EEFF 100%)",
+          background: "linear-gradient(135deg, #E8F4F8 0%, #EDF7FA 100%)",
           py: { xs: 8, md: 12 },
           textAlign: "center",
         }}
@@ -61,7 +61,7 @@ export default function AboutPageContent() {
                 Un gancho, un hilo y mucha pasión
               </Typography>
               <Typography variant="body1" color="text.secondary" sx={{ lineHeight: 1.9, mb: 2 }}>
-                Todo comenzó con una abuela que nos enseñó los primeros puntos en una tarde
+                Todo comenzó con una mamá que nos enseñó los primeros puntos en una tarde
                 lluviosa. Aquellas primeras puntadas torpes se convirtieron con el tiempo en
                 piezas que hacen sonreír a las personas.
               </Typography>
@@ -73,7 +73,7 @@ export default function AboutPageContent() {
             </Box>
             <Box
               sx={{
-                backgroundColor: "#FFF0F5",
+                backgroundColor: "#E8F4F8",
                 borderRadius: "24px",
                 p: 4,
                 display: "flex",
@@ -82,9 +82,9 @@ export default function AboutPageContent() {
               }}
             >
               {[
-                { number: "500+", label: "Piezas creadas" },
+                { number: "+100", label: "Piezas creadas" },
                 { number: "200+", label: "Clientes felices" },
-                { number: "6", label: "Años de experiencia" },
+                { number: "3", label: "Años de experiencia" },
                 { number: "100%", label: "Hecho a mano" },
               ].map((stat) => (
                 <Box
@@ -131,9 +131,9 @@ export default function AboutPageContent() {
             }}
           >
             {[
-              { emoji: "💜", title: "Amor artesanal", desc: "Cada punto es una expresión de cuidado y dedicación. Jamás producimos en serie.", bg: "#FFF0F5" },
-              { emoji: "🌿", title: "Sostenibilidad", desc: "Elegimos materiales naturales y proveedores responsables con el ambiente.", bg: "#F0FFF8" },
-              { emoji: "🤝", title: "Comunidad", desc: "Apoyamos a otros artesanos y compartimos conocimiento con la comunidad.", bg: "#F5F0FF" },
+              { emoji: "💜", title: "Amor artesanal", desc: "Cada punto es una expresión de cuidado y dedicación. Jamás producimos en serie.", bg: "#E8F4F8" },
+              { emoji: "🌿", title: "Sostenibilidad", desc: "Elegimos materiales naturales y proveedores responsables con el ambiente.", bg: "#EBF6F0" },
+              { emoji: "🤝", title: "Comunidad", desc: "Apoyamos a otros artesanos y compartimos conocimiento con la comunidad.", bg: "#EDF7FA" },
               { emoji: "✨", title: "Excelencia", desc: "No entregamos nada que no nos haya hecho sentir orgullosas primero.", bg: "#FFFBF0" },
             ].map((v) => (
               <Box
@@ -143,7 +143,7 @@ export default function AboutPageContent() {
                   backgroundColor: v.bg,
                   borderRadius: "20px",
                   textAlign: "center",
-                  border: "1px solid rgba(240, 221, 213, 0.4)",
+                  border: "1px solid rgba(174, 217, 224, 0.4)",
                 }}
               >
                 <Box sx={{ fontSize: "2.5rem", mb: 2 }}>{v.emoji}</Box>
@@ -191,7 +191,7 @@ export default function AboutPageContent() {
                   p: 2.5,
                   borderRadius: "16px",
                   border: "2px solid",
-                  borderColor: idx % 2 === 0 ? "rgba(232, 130, 154, 0.3)" : "rgba(167, 139, 202, 0.3)",
+                  borderColor: idx % 2 === 0 ? "rgba(174, 217, 224, 0.5)" : "rgba(168, 197, 218, 0.5)",
                   backgroundColor: "white",
                   position: "relative",
                 }}
@@ -224,9 +224,9 @@ export default function AboutPageContent() {
             sx={{
               textAlign: "center",
               p: { xs: 4, md: 6 },
-              backgroundColor: "#FFF5F7",
+              backgroundColor: "#EDF7FA",
               borderRadius: "24px",
-              border: "1px solid rgba(232, 130, 154, 0.2)",
+              border: "1px solid rgba(174, 217, 224, 0.4)",
             }}
           >
             <Favorite sx={{ fontSize: 40, color: "primary.main", mb: 2 }} />

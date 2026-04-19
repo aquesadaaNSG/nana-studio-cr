@@ -68,7 +68,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
       `🧶 *${product.name}*\n` +
       `🎨 Color: ${selectedColor}\n` +
       `📦 Cantidad: ${quantity}\n` +
-      `💵 Precio: ${formatUSD(product.price * quantity)}\n\n` +
+      `💰 Precio: ${formatUSD(product.price * quantity)}\n\n` +
       `_Por favor confirmar disponibilidad y forma de pago._`;
     window.open(getWhatsAppUrl(message), "_blank", "noopener,noreferrer");
   };
@@ -130,7 +130,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
               borderRadius: "20px",
               overflow: "hidden",
               aspectRatio: "1/1",
-              backgroundColor: "#FFF5F7",
+              backgroundColor: "#EDF7FA",
               mb: 2,
             }}
           >
@@ -339,7 +339,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                     height: 32,
                     backgroundColor:
                       selectedColor === color
-                        ? "rgba(232, 130, 154, 0.15)"
+                        ? "rgba(174, 217, 224, 0.2)"
                         : "transparent",
                     border: "2px solid",
                     borderColor: selectedColor === color ? "primary.main" : "divider",
@@ -450,7 +450,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
           >
             <Typography variant="body2" sx={{ color: "text.primary" }}>
               Envío a toda Costa Rica por{" "}
-              <strong>Correos de Costa Rica</strong>. Gratis en pedidos mayores a $75.
+              <strong>Correos de Costa Rica</strong>. Gratis en pedidos mayores a ₡22.000.
             </Typography>
           </Alert>
 
@@ -459,7 +459,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
             sx={{
               mt: 3,
               p: 2,
-              backgroundColor: "rgba(240, 221, 213, 0.15)",
+              backgroundColor: "rgba(174, 217, 224, 0.12)",
               borderRadius: "12px",
             }}
           >
@@ -474,7 +474,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                   display: "flex",
                   justifyContent: "space-between",
                   py: 0.75,
-                  borderBottom: "1px solid rgba(240, 221, 213, 0.4)",
+                  borderBottom: "1px solid rgba(174, 217, 224, 0.35)",
                   "&:last-child": { borderBottom: "none" },
                 }}
               >

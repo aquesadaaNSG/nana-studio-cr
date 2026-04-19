@@ -18,8 +18,8 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        backgroundColor: "#FFF0F3",
-        borderTop: "1px solid #F0DDD5",
+        backgroundColor: "#EBF5F9",
+        borderTop: "1px solid #CBE3EA",
         mt: "auto",
         pt: 6,
         pb: 3,
@@ -57,7 +57,7 @@ export default function Footer() {
                 size="small"
                 aria-label="Instagram"
                 sx={{
-                  backgroundColor: "rgba(167, 139, 202, 0.12)",
+                  backgroundColor: "rgba(168, 197, 218, 0.18)",
                   color: "secondary.main",
                   "&:hover": { backgroundColor: "secondary.main", color: "white" },
                 }}
@@ -72,7 +72,7 @@ export default function Footer() {
                 size="small"
                 aria-label="TikTok"
                 sx={{
-                  backgroundColor: "rgba(167, 139, 202, 0.12)",
+                  backgroundColor: "rgba(168, 197, 218, 0.18)",
                   color: "secondary.main",
                   "&:hover": { backgroundColor: "secondary.main", color: "white" },
                 }}
@@ -130,22 +130,28 @@ export default function Footer() {
               Categorías
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-              {["bolsos", "amigurumis", "accesorios", "hogar"].map((cat) => (
+              {[
+                { id: "anime-videojuegos", label: "Anime y Videojuegos" },
+                { id: "peliculas", label: "Películas y Series" },
+                { id: "animales", label: "Animalitos" },
+                { id: "personajes", label: "Personajes" },
+                { id: "florales", label: "Arreglos Florales" },
+                { id: "accesorios", label: "Llaveros y Temporada" },
+              ].map((cat) => (
                 <Link
-                  key={cat}
-                  href={`/tienda?categoria=${cat}`}
+                  key={cat.id}
+                  href={`/tienda?categoria=${cat.id}`}
                   style={{ textDecoration: "none" }}
                 >
                   <Typography
                     variant="body2"
                     sx={{
                       color: "text.secondary",
-                      textTransform: "capitalize",
                       "&:hover": { color: "primary.main" },
                       transition: "color 0.2s",
                     }}
                   >
-                    {cat.charAt(0).toUpperCase() + cat.slice(1)}
+                    {cat.label}
                   </Typography>
                 </Link>
               ))}

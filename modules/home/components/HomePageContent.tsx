@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Product, Category } from "@/shared/interfaces/product";
 import ProductCard from "@/modules/products/components/ProductCard";
 import { formatUSD } from "@/shared/utils/formatPrice";
-import { FREE_SHIPPING_THRESHOLD } from "@/shared/utils/shipping";
+import { FREE_SHIPPING_THRESHOLD, FREE_SHIPPING_LABEL } from "@/shared/utils/shipping";
 import { BRAND } from "@/shared/constants/contact";
 
 interface HomePageContentProps {
@@ -21,7 +21,7 @@ export default function HomePageContent({ featured, categories }: HomePageConten
       {/* HERO */}
       <Box
         sx={{
-          background: "linear-gradient(135deg, #FFF0F5 0%, #F5EEFF 50%, #EDF8F3 100%)",
+          background: "linear-gradient(135deg, #E8F4F8 0%, #EDF7FA 50%, #E8F4F8 100%)",
           pt: { xs: 6, md: 10 },
           pb: { xs: 8, md: 12 },
           overflow: "hidden",
@@ -32,7 +32,7 @@ export default function HomePageContent({ featured, categories }: HomePageConten
           sx={{
             position: "absolute", top: -80, right: -80, width: 400, height: 400,
             borderRadius: "50%",
-            background: "radial-gradient(circle, rgba(232,130,154,0.12) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(174,217,224,0.18) 0%, transparent 70%)",
             pointerEvents: "none",
           }}
         />
@@ -40,7 +40,7 @@ export default function HomePageContent({ featured, categories }: HomePageConten
           sx={{
             position: "absolute", bottom: -60, left: -60, width: 300, height: 300,
             borderRadius: "50%",
-            background: "radial-gradient(circle, rgba(167,139,202,0.1) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(168,197,218,0.15) 0%, transparent 70%)",
             pointerEvents: "none",
           }}
         />
@@ -49,7 +49,7 @@ export default function HomePageContent({ featured, categories }: HomePageConten
             <Box>
               <Chip
                 label="🧶 Tejidos artesanales desde Costa Rica"
-                sx={{ backgroundColor: "rgba(232, 130, 154, 0.12)", color: "primary.dark", fontWeight: 600, mb: 3, borderRadius: "999px" }}
+                sx={{ backgroundColor: "rgba(174, 217, 224, 0.2)", color: "primary.dark", fontWeight: 600, mb: 3, borderRadius: "999px" }}
               />
               <Typography variant="h1" sx={{ fontSize: { xs: "2.25rem", sm: "2.75rem", md: "3.5rem" }, fontWeight: 800, lineHeight: 1.15, mb: 2 }}>
                 Tejidos con{" "}
@@ -71,7 +71,7 @@ export default function HomePageContent({ featured, categories }: HomePageConten
               <Box sx={{ display: "flex", gap: 3, mt: 4, flexWrap: "wrap" }}>
                 {[
                   { icon: <Star sx={{ fontSize: 16, color: "#FFB300" }} />, text: "4.9/5 estrellas" },
-                  { icon: <LocalShipping sx={{ fontSize: 16, color: "success.main" }} />, text: `Envío gratis +${formatUSD(FREE_SHIPPING_THRESHOLD)}` },
+                  { icon: <LocalShipping sx={{ fontSize: 16, color: "success.main" }} />, text: `Envío gratis +${FREE_SHIPPING_LABEL}` },
                   { icon: <Handyman sx={{ fontSize: 16, color: "secondary.main" }} />, text: "100% hecho a mano" },
                 ].map((b) => (
                   <Box key={b.text} sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
@@ -118,7 +118,7 @@ export default function HomePageContent({ featured, categories }: HomePageConten
       </Box>
 
       {/* FEATURED PRODUCTS */}
-      <Box sx={{ py: { xs: 6, md: 8 }, backgroundColor: "#FFF5F7" }}>
+      <Box sx={{ py: { xs: 6, md: 8 }, backgroundColor: "#EDF7FA" }}>
         <Container maxWidth="lg">
           <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 4, flexWrap: "wrap", gap: 2 }}>
             <Box>
@@ -144,14 +144,14 @@ export default function HomePageContent({ featured, categories }: HomePageConten
           </Box>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 3 }}>
             {[
-              { icon: "🧶", title: "100% Hecho a mano", desc: "Cada producto es tejido con dedicación y amor. No hay dos piezas exactamente iguales.", bg: "#FFF0F5" },
-              { icon: "🌿", title: "Materiales naturales", desc: "Usamos algodón, lana merino y fibras naturales de la más alta calidad.", bg: "#F0FFF8" },
-              { icon: "🎨", title: "Colores personalizados", desc: "¿Quieres un color especial? Podemos crear tu pieza soñada a pedido.", bg: "#F5F0FF" },
-              { icon: "🚚", title: "Envío a toda Costa Rica", desc: `Enviamos por Correos de Costa Rica. Gratis en pedidos mayores a ${formatUSD(FREE_SHIPPING_THRESHOLD)}.`, bg: "#FFFBF0" },
-              { icon: "💬", title: "Atención personalizada", desc: "Respuesta rápida por WhatsApp. Te acompañamos en cada paso de tu compra.", bg: "#FFF0F5" },
-              { icon: "🌟", title: "Garantía de calidad", desc: "Si algo no te satisface, trabajamos para encontrar la mejor solución.", bg: "#F0FFF8" },
+              { icon: "🧶", title: "100% Hecho a mano", desc: "Cada producto es tejido con dedicación y amor. No hay dos piezas exactamente iguales.", bg: "#E8F4F8" },
+              { icon: "🌿", title: "Materiales naturales", desc: "Usamos algodón, lana merino y fibras naturales de la más alta calidad.", bg: "#EBF6F0" },
+              { icon: "🎨", title: "Colores personalizados", desc: "¿Quieres un color especial? Podemos crear tu pieza soñada a pedido.", bg: "#EDF7FA" },
+              { icon: "🚚", title: "Envío a toda Costa Rica", desc: `Enviamos por Correos de Costa Rica. Gratis en pedidos mayores a ${FREE_SHIPPING_LABEL}.`, bg: "#FFFBF0" },
+              { icon: "💬", title: "Atención personalizada", desc: "Respuesta rápida por WhatsApp. Te acompañamos en cada paso de tu compra.", bg: "#E8F4F8" },
+              { icon: "🌟", title: "Garantía de calidad", desc: "Si algo no te satisface, trabajamos para encontrar la mejor solución.", bg: "#EBF6F0" },
             ].map((item) => (
-              <Box key={item.title} sx={{ p: 3, borderRadius: "20px", backgroundColor: item.bg, border: "1px solid rgba(240, 221, 213, 0.5)" }}>
+              <Box key={item.title} sx={{ p: 3, borderRadius: "20px", backgroundColor: item.bg, border: "1px solid rgba(174, 217, 224, 0.5)" }}>
                 <Box sx={{ fontSize: "2.5rem", mb: 2 }}>{item.icon}</Box>
                 <Typography variant="h6" sx={{ fontWeight: 700, mb: 1 }}>{item.title}</Typography>
                 <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.7 }}>{item.desc}</Typography>
@@ -162,21 +162,21 @@ export default function HomePageContent({ featured, categories }: HomePageConten
       </Box>
 
       {/* CTA BANNER */}
-      <Box sx={{ py: { xs: 6, md: 8 }, background: "linear-gradient(135deg, #E8829A 0%, #A78BCA 100%)", textAlign: "center" }}>
+      <Box sx={{ py: { xs: 6, md: 8 }, background: "linear-gradient(135deg, #AED9E0 0%, #A8C5DA 100%)", textAlign: "center" }}>
         <Container maxWidth="md">
-          <Typography variant="h3" sx={{ color: "white", fontWeight: 800, mb: 2 }}>¿Listo para llevar un tejido a tu vida?</Typography>
-          <Typography variant="body1" sx={{ color: "rgba(255,255,255,0.85)", mb: 4, fontSize: "1.1rem" }}>
+          <Typography variant="h3" sx={{ color: "navy.main", fontWeight: 800, mb: 2, color: "#2C4A5A" }}>¿Listo para llevar un tejido a tu vida?</Typography>
+          <Typography variant="body1" sx={{ color: "rgba(44,74,90,0.75)", mb: 4, fontSize: "1.1rem" }}>
             Explora nuestra tienda o escríbenos para un pedido personalizado.
           </Typography>
           <Box sx={{ display: "flex", gap: 2, justifyContent: "center", flexWrap: "wrap" }}>
             <Button variant="contained" size="large" component={Link} href="/tienda" endIcon={<ArrowForward />}
-              sx={{ backgroundColor: "white", color: "primary.main", "&:hover": { backgroundColor: "rgba(255,255,255,0.9)" }, px: 4 }}>
+              sx={{ backgroundColor: "#2C4A5A", color: "white", "&:hover": { backgroundColor: "#3A5F72" }, px: 4 }}>
               Ver tienda
             </Button>
             <Button variant="outlined" size="large"
               href={`https://wa.me/${BRAND.WHATSAPP}?text=${encodeURIComponent("¡Hola! Me gustaría un pedido personalizado 🧶")}`}
               target="_blank" rel="noopener noreferrer"
-              sx={{ borderColor: "white", color: "white", "&:hover": { borderColor: "white", backgroundColor: "rgba(255,255,255,0.1)" }, px: 4 }}>
+              sx={{ borderColor: "#2C4A5A", color: "#2C4A5A", "&:hover": { borderColor: "#2C4A5A", backgroundColor: "rgba(44,74,90,0.08)" }, px: 4 }}>
               Pedido personalizado
             </Button>
           </Box>

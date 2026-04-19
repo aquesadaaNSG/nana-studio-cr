@@ -48,9 +48,9 @@ export default function Header() {
           position="fixed"
           elevation={trigger ? 2 : 0}
           sx={{
-            backgroundColor: trigger ? "rgba(255, 248, 244, 0.95)" : "rgba(255, 248, 244, 0.8)",
+            backgroundColor: trigger ? "rgba(242, 249, 251, 0.95)" : "rgba(242, 249, 251, 0.8)",
             backdropFilter: "blur(12px)",
-            borderBottom: trigger ? "none" : "1px solid rgba(240, 221, 213, 0.5)",
+            borderBottom: trigger ? "none" : "1px solid rgba(174, 217, 224, 0.5)",
             transition: "all 0.3s ease",
           }}
         >
@@ -118,11 +118,11 @@ export default function Header() {
                       color: pathname === link.href ? "primary.main" : "text.primary",
                       backgroundColor:
                         pathname === link.href
-                          ? "rgba(232, 130, 154, 0.12)"
+                          ? "rgba(174, 217, 224, 0.18)"
                           : "transparent",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        backgroundColor: "rgba(232, 130, 154, 0.08)",
+                        backgroundColor: "rgba(174, 217, 224, 0.12)",
                         color: "primary.main",
                       },
                       display: "inline-block",
@@ -138,8 +138,8 @@ export default function Header() {
             <IconButton
               onClick={openCart}
               sx={{
-                backgroundColor: "rgba(232, 130, 154, 0.1)",
-                "&:hover": { backgroundColor: "rgba(232, 130, 154, 0.2)" },
+                backgroundColor: "rgba(174, 217, 224, 0.15)",
+                "&:hover": { backgroundColor: "rgba(174, 217, 224, 0.28)" },
                 mr: { xs: 0, md: 0 },
               }}
               aria-label="Ver carrito"
@@ -201,7 +201,7 @@ export default function Header() {
                     borderRadius: "12px",
                     mb: 0.5,
                     "&.Mui-selected": {
-                      backgroundColor: "rgba(232, 130, 154, 0.12)",
+                      backgroundColor: "rgba(174, 217, 224, 0.18)",
                       color: "primary.main",
                     },
                   }}

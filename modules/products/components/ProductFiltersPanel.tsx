@@ -150,7 +150,7 @@ export default function ProductFiltersPanel({
                 cursor: "pointer",
                 backgroundColor:
                   filters.sortBy === opt.value
-                    ? "rgba(232, 130, 154, 0.12)"
+                    ? "rgba(174, 217, 224, 0.18)"
                     : "transparent",
                 color:
                   filters.sortBy === opt.value ? "primary.main" : "text.secondary",
@@ -158,7 +158,7 @@ export default function ProductFiltersPanel({
                 fontSize: "0.875rem",
                 transition: "all 0.15s ease",
                 "&:hover": {
-                  backgroundColor: "rgba(232, 130, 154, 0.06)",
+                  backgroundColor: "rgba(174, 217, 224, 0.1)",
                   color: "primary.main",
                 },
               }}
@@ -184,14 +184,14 @@ export default function ProductFiltersPanel({
               cursor: "pointer",
               backgroundColor:
                 !filters.category
-                  ? "rgba(232, 130, 154, 0.12)"
+                  ? "rgba(174, 217, 224, 0.18)"
                   : "transparent",
               color: !filters.category ? "primary.main" : "text.secondary",
               fontWeight: !filters.category ? 600 : 400,
               fontSize: "0.875rem",
               transition: "all 0.15s ease",
               "&:hover": {
-                backgroundColor: "rgba(232, 130, 154, 0.06)",
+                backgroundColor: "rgba(174, 217, 224, 0.1)",
               },
             }}
           >
@@ -210,14 +210,14 @@ export default function ProductFiltersPanel({
                 cursor: "pointer",
                 backgroundColor:
                   filters.category === cat.id
-                    ? "rgba(232, 130, 154, 0.12)"
+                    ? "rgba(174, 217, 224, 0.18)"
                     : "transparent",
                 color:
                   filters.category === cat.id ? "primary.main" : "text.secondary",
                 fontWeight: filters.category === cat.id ? 600 : 400,
                 fontSize: "0.875rem",
                 transition: "all 0.15s ease",
-                "&:hover": { backgroundColor: "rgba(232, 130, 154, 0.06)" },
+                "&:hover": { backgroundColor: "rgba(174, 217, 224, 0.1)" },
               }}
             >
               {cat.name}
@@ -291,14 +291,14 @@ export default function ProductFiltersPanel({
                   height: 24,
                   cursor: "pointer",
                   backgroundColor: selected
-                    ? "rgba(232, 130, 154, 0.15)"
+                    ? "rgba(174, 217, 224, 0.22)"
                     : "transparent",
                   border: "1px solid",
                   borderColor: selected ? "primary.main" : "divider",
                   color: selected ? "primary.main" : "text.secondary",
                   fontWeight: selected ? 600 : 400,
                   "&:hover": {
-                    backgroundColor: "rgba(232, 130, 154, 0.08)",
+                    backgroundColor: "rgba(174, 217, 224, 0.12)",
                   },
                 }}
               />

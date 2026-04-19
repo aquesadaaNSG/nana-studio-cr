@@ -23,7 +23,7 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
       {/* Page header */}
       <Box
         sx={{
-          background: "linear-gradient(135deg, #FFF0F5 0%, #F5EEFF 100%)",
+          background: "linear-gradient(135deg, #E8F4F8 0%, #EDF7FA 100%)",
           py: { xs: 5, md: 7 },
           textAlign: "center",
         }}

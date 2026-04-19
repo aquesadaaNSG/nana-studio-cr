@@ -73,7 +73,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             label={`-${discount}%`}
             size="small"
             sx={{
-              backgroundColor: "#E8829A",
+              backgroundColor: "#82BEC8",
               color: "white",
               fontWeight: 700,
               fontSize: "0.7rem",
@@ -147,7 +147,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           sx={{
             position: "relative",
             aspectRatio: "1/1",
-            backgroundColor: "#FFF5F7",
+            backgroundColor: "#EDF7FA",
             overflow: "hidden",
           }}
           onMouseEnter={() => product.images[1] && setImgIndex(1)}
@@ -232,9 +232,9 @@ export default function ProductCard({ product }: ProductCardProps) {
                 sx={{
                   fontSize: "0.6rem",
                   height: 18,
-                  backgroundColor: "rgba(232, 130, 154, 0.08)",
+                  backgroundColor: "rgba(174, 217, 224, 0.12)",
                   color: "text.secondary",
-                  border: "1px solid rgba(232, 130, 154, 0.2)",
+                  border: "1px solid rgba(174, 217, 224, 0.35)",
                 }}
               />
             ))}
