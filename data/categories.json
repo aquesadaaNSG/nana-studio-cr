@@ -1,50 +1,50 @@
 [
   {
-    "id": "bolsos",
-    "name": "Bolsos y Carteras",
-    "description": "Bolsos, carteras y monederos tejidos a mano con los mejores materiales.",
-    "icon": "ShoppingBag",
-    "color": "#F4B8C5",
-    "image": "https://images.unsplash.com/photo-1547949003-9792a18a2601?w=400&q=80"
+    "id": "anime-videojuegos",
+    "name": "Anime y Videojuegos",
+    "description": "Amigurumis de tus personajes favoritos del anime, K-Pop y videojuegos.",
+    "icon": "SportsEsports",
+    "color": "#82BEC8",
+    "image": "/productos/anime/goku/1.jpg"
   },
   {
-    "id": "amigurumis",
-    "name": "Amigurumis",
-    "description": "Adorables personajes y animales tejidos, perfectos como regalo o decoración.",
-    "icon": "Toys",
-    "color": "#C9B4E6",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80"
+    "id": "peliculas",
+    "name": "Películas y Series",
+    "description": "Personajes icónicos del cine y la televisión tejidos a crochet.",
+    "icon": "Movie",
+    "color": "#A8C5DA",
+    "image": "/productos/peliculas/stitch/1.jpg"
+  },
+  {
+    "id": "animales",
+    "name": "Animalitos",
+    "description": "Adorables animales tejidos: gatitos, ositos, conejitos, pájaros y más.",
+    "icon": "Pets",
+    "color": "#AED9E0",
+    "image": "/productos/personajes/gatitos/overalls.jpg"
+  },
+  {
+    "id": "personajes",
+    "name": "Personajes Especiales",
+    "description": "Graduados, virgencitas, Hello Kitty y personajes únicos para regalar.",
+    "icon": "AutoAwesome",
+    "color": "#9DD4D8",
+    "image": "/productos/personajes/hello-kitty/1.jpg"
+  },
+  {
+    "id": "florales",
+    "name": "Arreglos Florales",
+    "description": "Bouquets y arreglos de flores tejidas a crochet que nunca se marchitan.",
+    "icon": "LocalFlorist",
+    "color": "#A8C5DA",
+    "image": "/productos/florales/bouquet-lirios.jpg"
   },
   {
     "id": "accesorios",
-    "name": "Accesorios",
-    "description": "Gorros, bufandas, guantes y diademas tejidas para cada ocasión.",
-    "icon": "Style",
-    "color": "#A8E6CF",
-    "image": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400&q=80"
-  },
-  {
-    "id": "hogar",
-    "name": "Hogar",
-    "description": "Cojines, canastas, posavasos y más para dar calidez a tu hogar.",
-    "icon": "Home",
-    "color": "#FFD6A5",
-    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=80"
-  },
-  {
-    "id": "ropa",
-    "name": "Ropa",
-    "description": "Tops, vestidos y abrigos tejidos con diseños únicos y artesanales.",
-    "icon": "Checkroom",
-    "color": "#F4B8C5",
-    "image": "https://images.unsplash.com/photo-1554568218-0f1715e72254?w=400&q=80"
-  },
-  {
-    "id": "decoracion",
-    "name": "Decoración",
-    "description": "Cuadros, móviles, guirnaldas y piezas decorativas tejidas para tu espacio.",
-    "icon": "AutoAwesome",
-    "color": "#C9B4E6",
-    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&q=80"
+    "name": "Llaveros y Temporada",
+    "description": "Llaveros tejidos, adornos navideños y accesorios especiales.",
+    "icon": "Redeem",
+    "color": "#82BEC8",
+    "image": "/productos/llaveros/girasol.jpg"
   }
 ]
