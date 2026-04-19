@@ -43,14 +43,14 @@ export function generateWhatsAppOrderMessage(params: GenerateOrderMessageParams)
     message += `${index + 1}. *${item.name}*\n`;
     message += `   🎨 Color: ${item.color}\n`;
     message += `   📦 Cantidad: ${item.quantity}\n`;
-    message += `   💵 Precio unitario: ${formatUSD(item.price)}\n`;
+    message += `   💰 Precio unitario: ${formatUSD(item.price)}\n`;
     message += `   💰 Subtotal: ${formatUSD(item.price * item.quantity)}\n`;
     message += `\n`;
   });
 
   // Resumen de costos
   message += `━━━━━━━━━━━━━━━━\n`;
-  message += `💵 Subtotal: ${formatUSD(subtotal)}\n`;
+  message += `💰 Subtotal: ${formatUSD(subtotal)}\n`;
   message += `🚚 Envío (${shippingZoneName}): ${
     isFreeShipping ? "¡GRATIS! 🎉" : formatUSD(shippingCost)
   }\n`;
@@ -63,7 +63,7 @@ export function generateWhatsAppOrderMessage(params: GenerateOrderMessageParams)
     message += `📝 *Notas:* ${formData.notes}\n\n`;
   }
 
-  message += `_Pago en USD. Por favor confirmar disponibilidad y método de pago._`;
+  message += `_Por favor confirmar disponibilidad y método de pago._`;
 
   return message;
 }

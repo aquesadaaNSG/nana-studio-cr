@@ -28,4 +28,5 @@ export function isFreeShipping(subtotal: number): boolean {
 }
 
 export const FREE_SHIPPING_THRESHOLD = data.freeShippingThreshold;
+export const FREE_SHIPPING_LABEL = "₡22.000";
 export const SHIPPING_PROVIDER = data.provider;

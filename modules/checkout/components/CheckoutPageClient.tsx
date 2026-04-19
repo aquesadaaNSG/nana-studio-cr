@@ -36,6 +36,7 @@ import {
   getEstimatedDays,
   isFreeShipping,
   FREE_SHIPPING_THRESHOLD,
+  FREE_SHIPPING_LABEL,
   SHIPPING_PROVIDER,
 } from "@/shared/utils/shipping";
 import { generateWhatsAppOrderMessage } from "@/shared/utils/whatsappOrderMessage";
@@ -454,9 +455,7 @@ export default function CheckoutPageClient() {
                   }}
                 >
                   <Typography variant="caption" sx={{ color: "success.dark" }}>
-                    🚚 Agrega{" "}
-                    <strong>{formatUSD(FREE_SHIPPING_THRESHOLD - subtotal)}</strong> más
-                    para envío gratis
+                    🚚 Agrega {FREE_SHIPPING_LABEL} o más para envío gratis
                   </Typography>
                 </Box>
               )}

@@ -22,7 +22,7 @@ import {
 } from "@mui/icons-material";
 import { useCartStore } from "@/modules/cart/stores/cartStore";
 import { formatUSD } from "@/shared/utils/formatPrice";
-import { FREE_SHIPPING_THRESHOLD } from "@/shared/utils/shipping";
+import { FREE_SHIPPING_THRESHOLD, FREE_SHIPPING_LABEL } from "@/shared/utils/shipping";
 
 export default function CartDrawer() {
   const { items, isOpen, closeCart, removeItem, updateQuantity, getSubtotal, clearCart } =
@@ -92,7 +92,7 @@ export default function CartDrawer() {
           <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.5 }}>
             <LocalShipping sx={{ fontSize: 16, color: "success.main" }} />
             <Typography variant="caption" sx={{ color: "success.dark", fontWeight: 500 }}>
-              ¡Agrega {formatUSD(remaining)} más para envío gratis!
+              ¡Agrega {FREE_SHIPPING_LABEL} o más para envío gratis!
             </Typography>
           </Box>
           <Box
